@@ -1,0 +1,11 @@
+<!--{{(searchByForm | async).get('name').value}}-->
+
+<div>
+  <ul>
+    <li *ngFor="let policy of policies | search: (searchTerm | async)">
+      <span>Name: {{policy.name}}</span><br>
+      <span>Age: {{policy.age}}</span><br>
+      <span>Address: {{policy.address}}</span>
+    </li>
+  </ul>
+</div>

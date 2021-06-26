@@ -1,0 +1,14 @@
+<form [formGroup]="searchByForm" (ngSubmit)="onSearch()">
+<div class="form-group">
+  <input type="text" formControlName="name" placeholder="name">
+</div>
+<div class="form-group">
+  <input type="text" formControlName="age" placeholder="age">
+</div>
+<div class="form-group">
+  <input type="text" formControlName="address" placeholder="address">
+</div>
+  <div class="actions">
+    <button type="submit" >Search</button>
+  </div>
+</form>
